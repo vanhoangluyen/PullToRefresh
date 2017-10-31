@@ -34,7 +34,8 @@ class TableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     @objc func populate() {
-        for i in 1...10 {
+        let emptyNumber = Array(1...10)
+        for i in emptyNumber.reversed() {
             getDataSource.arrayNumber.append(i)
         }
         tableView.reloadData()
